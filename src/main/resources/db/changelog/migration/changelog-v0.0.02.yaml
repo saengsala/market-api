@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: loadData-market
+      author: nuttapon.sae
+      changes:
+        - loadData:
+            tableName: market
+            encoding: UTF-8
+            file: /db/changelog/seed/master-market.csv

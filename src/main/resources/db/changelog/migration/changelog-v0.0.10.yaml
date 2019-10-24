@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: loadData-product-106
+      author: nuttapon.sae
+      changes:
+        - loadData:
+            tableName: product
+            encoding: UTF-8
+            file: /db/changelog/seed/master-product-106.csv
