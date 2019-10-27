@@ -18,7 +18,7 @@ import javax.validation.constraints.Size;
 public class Market extends BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "market_seq_id")
     @Column(name = "id", columnDefinition = "int", nullable = false)
     private Integer id;
 

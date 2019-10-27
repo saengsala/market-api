@@ -6,4 +6,11 @@ databaseChangeLog:
         - loadData:
             tableName: product
             encoding: UTF-8
+            columns:
+              - column:
+                  name: id
+                  type: computed
+              - column:
+                  name: created_date
+                  type: computed
             file: /db/changelog/seed/master-product-104.csv

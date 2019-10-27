@@ -19,7 +19,7 @@ import java.math.BigInteger;
 public class Product extends BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "product_seq_id")
     @Column(name = "id", columnDefinition = "bigint", nullable = false)
     private BigInteger id;
 
